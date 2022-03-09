@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+}
+body {
+}
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  padding: 2rem;
+  font-size: clamp(2rem, 3.5vw, 6rem);
+  letter-spacing: 1.5px;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#main-grid {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  max-width: 100%;
+}
+/* HEAD SECTION */
+.head-section {
+  background-color: #000000;
+  color: #1ed760;
+  font-size: 2rem;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  padding: 2rem;
+}
+.head-img {
+  margin: 1rem auto;
+}
+.head-text {
+  padding: 1rem 0.5rem;
+}
+/* ABOUT SECTION */
+.about-section p {
+  padding: 0 0.5rem;
+  line-height: 1.5rem;
+  font-size: clamp(1.3rem, 3.5vw, 3rem);
+}
+/* TECH STACK */
+.stack-section {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.span-2-cols {
+  grid-column: span 2;
+}
+.stack-section img {
+  height: 10rem;
+  width: 10rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.stack-section img:hover {
+  padding: 0;
+  cursor: pointer;
+}
+/* PROJECTS */
+
+/* MAKE IT INTO GRID AND ADD BREAKPOINTS  */
+.project-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.project {
+  background-image: url("images/blog.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid blue;
+}
+.project-details {
+  color: rgb(197, 240, 6);
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: #000000b1;
+}
+.project-details a {
+  color: white;
+}
